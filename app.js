@@ -8,7 +8,7 @@ let prev = document.querySelector(".prev");
 
 getSurah();
 function getSurah() {
-  fetch("http://api.alquran.cloud/v1/surah")
+  fetch("https://api.alquran.cloud/v1/surah")
     .then((response) => {
       return response.json();
     })
