@@ -14,12 +14,10 @@ function getSurah() {
     })
     .then((data) => {
       for (let i = 0; i < 115; i++) {
-        let { name } = data.data[i].name;
-        let { enName } = data.data[i].englishName;
         soarhContainer.innerHTML += `
           <div>
-           <p>${name}</p>
-           <p>${enName}</p>
+           <p>${data.data[i].name}</p>
+           <p>${data.data[i].englishName}</p>
            <p>عدد الآيات  ${data.data[i].numberOfAyahs} <span>مكان النزول ${data.data[i].revelationType}</span> </p>
            
            </div>  
